@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function songDecoder(song){
+        let pos = 0;
+        while(true) {
+            let foundPos = song.indexOf('WUB', pos);
+            if (foundPos == -1) break;
+
+            console.log(foundPos);
+            pos +=1;
+        }
+    }
+
+    songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB");
+</script>
+</body>
+</html>
